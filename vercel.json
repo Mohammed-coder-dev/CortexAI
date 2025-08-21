@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "/index.html" }
+  ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.alkindix.com" }],
+      "destination": "https://alkindix.com/$1",
+      "permanent": true
+    }
+  ]
+}

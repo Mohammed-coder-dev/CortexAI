@@ -1,23 +1,72 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nimble Mind — CortexAI</title>
-  <meta name="description" content="Nimble Mind — CortexAI Engine by Alkindi. Symbolic reasoning meets adaptive intelligence.">
-  <link rel="stylesheet" href="/styles.css">
+  <meta name="description" content="Nimble Mind — CortexAI Engine by Alkindi. Symbolic reasoning meets adaptive intelligence." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://alkindix.com/" />
+
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Nimble Mind — CortexAI" />
+  <meta property="og:description" content="Symbolic reasoning meets adaptive intelligence." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://alkindix.com/" />
+  <meta property="og:image" content="/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Nimble Mind</h1>
-    <p>Building the CortexAI Engine</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <h1 class="brand">Nimble Mind</h1>
+      <p class="tagline">Building the CortexAI Engine</p>
+    </div>
   </header>
 
-  <main>
-    <section class="card">
-      <h2>Live CortexAI</h2>
-      <p>Coming soon — Python engine integration.</p>
-    </section>
+  <main id="main" class="site-main" role="main">
+    <div class="container">
+      <section class="card">
+        <h2>Live CortexAI</h2>
+        <p>Coming soon — Python engine integration.</p>
+        <div class="cta-row">
+          <a class="btn" href="https://github.com/Mohammed-coder-dev/CortexAI" target="_blank" rel="noopener">View Repository</a>
+          <a class="btn ghost" href="/status">Status</a>
+        </div>
+      </section>
+    </div>
   </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <small>© <span id="year"></span> Alkindi — Cognition Infrastructure</small>
+      <nav aria-label="Footer">
+        <a href="/sitemap.xml">Sitemap</a>
+        <a href="/404.html">404</a>
+      </nav>
+    </div>
+  </footer>
+
+  <noscript>
+    <style>.btn{outline:2px solid currentColor}</style>
+  </noscript>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
